@@ -1,0 +1,16 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        int n=nums.size();
+        map<int,int> m;
+        for(auto i:nums){
+            m[i]++;
+            if(m[i]>1){
+                return true;
+            }
+        }
+        return false;
+
+        
+    }
+};
